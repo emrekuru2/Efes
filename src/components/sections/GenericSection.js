@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
+import Maps from "../elements/Maps";
 
 const propTypes = {
   children: PropTypes.node,
@@ -40,6 +41,8 @@ const GenericSection = ({
     bottomDivider && 'has-bottom-divider'
   );
 
+
+
   return (
     <section
       {...props}
@@ -47,11 +50,13 @@ const GenericSection = ({
     >
       <div className="container">
         <div className={innerClasses}>
+          <Maps/>
           {children}
         </div>
       </div>
     </section>
   );
+
 }
 
 GenericSection.propTypes = propTypes;

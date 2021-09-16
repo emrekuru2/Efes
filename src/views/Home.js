@@ -5,16 +5,16 @@ import FeaturesTiles from '../components/sections/FeaturesTiles';
 import FeaturesSplit from '../components/sections/FeaturesSplit';
 import Testimonial from '../components/sections/Testimonial';
 import Cta from '../components/sections/Cta';
+import GenericSection from "../components/sections/GenericSection";
 
 const Home = () => {
 
   return (
     <>
-      <Hero className="illustration-section-01" />
-      <FeaturesTiles />
-      <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />
-      <Testimonial topDivider />
-      <Cta split />
+        <Hero className="illustration-section-01" />
+        <Testimonial topDivider bottomDivider />
+        <GenericSection />
+        <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />
     </>
   );
 }
